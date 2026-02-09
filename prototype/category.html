@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trigano VDL · Catégorie</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body data-page="category">
+    <header>
+      <div class="container navbar">
+        <div class="brand">
+          <img src="assets/logo-placeholder.svg" alt="Trigano VDL" />
+          <span>Trigano VDL Media</span>
+        </div>
+        <div class="nav-actions">
+          <a class="btn ghost small" href="home.html">Home</a>
+          <a class="btn ghost small" href="admin.html">Admin</a>
+          <button class="btn ghost small logout-btn" type="button" data-i18n="logout">Déconnexion</button>
+          <select id="lang-select" aria-label="Langue">
+            <option value="fr">FR</option>
+            <option value="en">EN</option>
+            <option value="de">DE</option>
+            <option value="it">IT</option>
+          </select>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="container">
+        <div class="breadcrumbs"></div>
+        <div class="hero category-hero">
+          <h1>Catégorie</h1>
+          <p></p>
+        </div>
+        <div class="pack-cta">
+          <div>
+            <h3 data-i18n="downloadPack">Télécharger en pack</h3>
+            <p>Rassemblez tous les fichiers validés dans un unique téléchargement.</p>
+          </div>
+          <button class="btn" type="button" data-i18n="downloadPack">Télécharger en pack</button>
+        </div>
+        <div class="filters">
+          <input id="search" type="search" data-i18n-placeholder="searchPlaceholder" placeholder="Rechercher" />
+          <select id="filter-type">
+            <option value="all">Tous les types</option>
+            <option value="file">Fichier</option>
+            <option value="folder">Dossier</option>
+            <option value="pack">Pack</option>
+            <option value="link">Lien</option>
+          </select>
+          <select id="filter-year"></select>
+          <select id="filter-lang"></select>
+        </div>
+        <div class="media-list"></div>
+      </section>
+    </main>
+    <div class="modal" aria-hidden="true">
+      <div class="modal-overlay"></div>
+      <div class="modal-content">
+        <button class="modal-close" aria-label="Fermer">×</button>
+        <h3></h3>
+        <p></p>
+        <ul></ul>
+        <div class="meta-line">
+          <span>Poids total</span>
+          <strong class="modal-size"></strong>
+        </div>
+        <button class="btn" type="button" data-i18n="packDownload">Télécharger le pack</button>
+      </div>
+    </div>
+    <script src="data.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

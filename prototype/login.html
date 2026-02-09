@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trigano VDL · Login</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body data-page="login">
+    <main class="login">
+      <section class="login-card">
+        <div class="brand">
+          <img src="assets/logo-placeholder.svg" alt="Trigano VDL" />
+          <div>
+            <h2 data-i18n="loginTitle">Accès privé Trigano VDL</h2>
+            <p data-i18n="loginSubtitle">Plateforme media multi-marques réservée aux professionnels.</p>
+          </div>
+        </div>
+        <form id="login-form">
+          <label>
+            Identifiant
+            <input type="text" required placeholder="prenom.nom" />
+          </label>
+          <label>
+            Mot de passe
+            <input type="password" required placeholder="••••••••" />
+          </label>
+          <button class="btn" type="submit" data-i18n="loginButton">Connexion</button>
+        </form>
+        <div class="nav-actions">
+          <select id="lang-select" aria-label="Langue">
+            <option value="fr">FR</option>
+            <option value="en">EN</option>
+            <option value="de">DE</option>
+            <option value="it">IT</option>
+          </select>
+        </div>
+        <p class="meta-line">
+          <span>Accès réservé aux concessions, presse et influenceurs autorisés.</span>
+        </p>
+      </section>
+    </main>
+    <script src="data.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
