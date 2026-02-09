@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trigano VDL · Admin</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body data-page="admin">
+    <header>
+      <div class="container navbar">
+        <div class="brand">
+          <img src="assets/logo-placeholder.svg" alt="Trigano VDL" />
+          <span>Trigano VDL Media</span>
+        </div>
+        <div class="nav-actions">
+          <a class="btn ghost small" href="home.html">Home</a>
+          <button class="btn ghost small logout-btn" type="button" data-i18n="logout">Déconnexion</button>
+          <select id="lang-select" aria-label="Langue">
+            <option value="fr">FR</option>
+            <option value="en">EN</option>
+            <option value="de">DE</option>
+            <option value="it">IT</option>
+          </select>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="container">
+        <div class="hero">
+          <h1 data-i18n="adminTitle">Console admin (mock)</h1>
+          <p data-i18n="adminIntro">Prévisualisation des outils internes de gestion des médias.</p>
+        </div>
+        <div class="admin-grid">
+          <article class="card admin-card">
+            <h3>Ajout de fichiers</h3>
+            <ul>
+              <li>Glisser-déposer sécurisé.</li>
+              <li>Versioning automatique (V1, V2…).</li>
+              <li>Tags métier & droits d'accès.</li>
+            </ul>
+          </article>
+          <article class="card admin-card">
+            <h3>Organisation par dossiers</h3>
+            <ul>
+              <li>Arborescence marque → catégorie.</li>
+              <li>Drag & drop pour réorganiser.</li>
+              <li>Pack automatique par sélection.</li>
+            </ul>
+          </article>
+          <article class="card admin-card">
+            <h3>Activation / désactivation</h3>
+            <ul>
+              <li>Publication planifiée.</li>
+              <li>Historique des téléchargements.</li>
+              <li>Notifications aux partenaires.</li>
+            </ul>
+          </article>
+          <article class="card admin-card">
+            <h3>Langues & localisation</h3>
+            <ul>
+              <li>Traductions des fiches médias.</li>
+              <li>Priorité par zone géographique.</li>
+              <li>Signalement des contenus manquants.</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+    </main>
+    <script src="data.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
